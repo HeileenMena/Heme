@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="StyleSheet" href="Tienda.css">
+    <title>HEME</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-lg-12 col-md-6">
+            <header>
+                <div class="container">
+                    <div class="row align-items-stretch justify-content-between">
+                        <nav class="navbar navbar-expand-md navbar-dark fixed-top n">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarCollapse">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item dropdown">
+                                        <img src="img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                            width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false"></img>
+                                        <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                            <table id="lista-carrito" class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Imagen</th>
+                                                        <th>Nombre</th>
+                                                        <th>Precio</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody></tbody>
+                                            </table>
+                                            <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                            <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!--Tablas que muestran los articulos disponibles-->
+            <main>
+                <center>
+                    <img src="img/heme.png" width="500">
+                    <img src="img/LOGO.png"><br>  
+                </center>
+                <table>
+                    <tr>
+                        <td><a href="Tienda.html">Inicio</a></td>
+                        <td><a href="Damas.html">Damas</a></td>
+                        <td><a href="Curvy-Plus.html">Curvy-Plus</a></td>
+                        <td><a href="Caballero.html">Caballero</a></td>
+                        <td><a href="Nina.html">Ni&ntilde;a</a></td>
+                        <td><a href="Nino.html">Ni&ntilde;o</a></td>                
+                    </tr>
+                </table>
+                <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+                    <h1 class="display-4 mt-4">Lista de Productos</h1>
+                    <p class="lead">Selecciona uno de nuestros productos y accede a un descuento</p>
+                </div>
+                <div class="container" id="lista-productos">
+                    <div class="container" id="lista-productos">
+                        <div class="card-deck mb-3 text-center">
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Camiseta con encaje en contraste escote V</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/d1.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$ <span class="">172</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Sueter Marled con cordon delantero de manga reglan</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/d2.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$ <span class="">235</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Vestido tejido ajustado con cuello estilo polo</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/d3.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$<span class="">367</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="card-deck mb-3 text-center">
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Vestido de cuello alto con aberturas en la espalda</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/d4.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$<span class="">324</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Abrigo de encogimiento de hombros tipo cardigan</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/cp1.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$<span class="">380</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Blusa elegante de estampado floral</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/cp2.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$<span class="">300</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-deck mb-3 text-center">
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Overol estilo shorts</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/cp3.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$<span class="">422</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Chaleco sin mangas de cuero</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/cp4.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$<span class="">369</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Sueter de halloween con decoracion de calabaza</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/c1.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$<span class="">250</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-deck mb-3 text-center">
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Chamarra con gorra color negro con rojo</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/c2.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$ <span class="">246</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="10">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Chaqueta deportiva color azul</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/c3.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$ <span class="">235</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="11">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Camiseta estilo traje de beisbol</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/c4.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$<span class="">367</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="12">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-deck mb-3 text-center">
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Falda tubular a cuadros</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/na3.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$ <span class="">346</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="13">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Vestido de hombros descubiertos con estampaso de estrellas</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/na2.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$ <span class="">370</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="14">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Chaqueta de estampado floral</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/na1.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$<span class="">367</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="15">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-deck mb-3 text-center">
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Falda de vuelos de lentejuela</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/na.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$ <span class="">426</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="16">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Conjunto de sudadera y pantalonera de algodon</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/no4.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$ <span class="">370</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="17">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Pantalon rompevientos color plata metalizado</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/no3.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$<span class="">267</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="18">Comprar</a>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="card-deck mb-3 text-center">
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Sudadera con estampado de dinosaurios</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/no2.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$ <span class="">300</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="19">Comprar</a>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-bold">Playera con estampado de la cara de Bob Esponja</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="img/no1.png" class="card-img-top">
+                                    <h1 class="card-title pricing-card-title precio">$ <span class="">270</span></h1>
+                                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="20">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <table>
+                    <tr>
+                        <td><a href="Tienda.html">Inicio</a></td>
+                        <td><a href="Damas.html">Damas</a></td>
+                        <td><a href="Curvy-Plus.html">Curvy-Plus</a></td>
+                        <td><a href="Caballero.html">Caballero</a></td>
+                        <td><a href="Nina.html">Ni&ntilde;a</a></td>
+                        <td><a href="Nino.html">Ni&ntilde;o</a></td>
+                        <td><a href="index.html"><img src="img/cart.jpeg" height="50"></a></td>
+                    </tr>
+                </table>
+            </main>
+            <script src="js/jquery-3.4.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/sweetalert2.min.js"></script>
+            <script src="js/carrito.js"></script>
+            <script src="js/pedido.js"></script>
+        </div>
+    </div>
+</body>
+</html>
